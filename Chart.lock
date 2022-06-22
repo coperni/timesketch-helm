@@ -1,0 +1,12 @@
+dependencies:
+- name: redis
+  repository: https://charts.bitnami.com/bitnami
+  version: 16.12.3
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.6.8
+- name: opensearch
+  repository: https://opensearch-project.github.io/helm-charts/
+  version: 2.1.0
+digest: sha256:3431f8afa40145ea07ad41c69cc0079abf6d0d8894eae60fd339874dd2b4086f
+generated: "2022-06-22T19:52:15.635458507-04:00"

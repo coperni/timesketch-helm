@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ts-config-etc
+data:
+  {{- $files := .Files }}
+  {{- range $path, $_ := .Files.Glob "timesketch/*" }}
+  {{ base $path}}: |-
+{{ $files.Get $path | indent 4 }}
+  {{- end }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ts-config-scenarios
+data:
+  {{- $files := .Files }}
+  {{- range $path, $_ := .Files.Glob "timesketch/scenarios/*" }}
+  {{ base $path }}: |-
+{{ $files.Get $path | indent 4 }}
+  {{- end }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ts-config-sigma-rules
+data:
+  {{- $files := .Files }}
+  {{- range $path, $_ := .Files.Glob "timesketch/sigma/rules/*" }}
+  {{ base $path }}: |-
+{{ $files.Get $path | indent 4 }}
+  {{- end }}
