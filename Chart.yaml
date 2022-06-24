@@ -11,7 +11,7 @@ dependencies:
   version: "11.6.8"
   repository: "https://charts.bitnami.com/bitnami"
 - name: opensearch
-  version: "2.1.0"
+  version: "1.6.0"
   repository: "https://opensearch-project.github.io/helm-charts/"
 
 # A chart can be either an 'application' or a 'library' chart.

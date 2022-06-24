@@ -39,8 +39,8 @@ data:
     # http://www.elasticsearch.org/blog/scripting-security/
     OPENSEARCH_HOST = 'opensearch-cluster-master'
     OPENSEARCH_PORT = 9200
-    OPENSEARCH_USER = None
-    OPENSEARCH_PASSWORD = None
+    OPENSEARCH_USER = 'admin'
+    OPENSEARCH_PASSWORD = 'admin'
     OPENSEARCH_SSL = False
     OPENSEARCH_VERIFY_CERTS = True
     OPENSEARCH_TIMEOUT = 10
